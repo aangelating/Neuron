@@ -19,6 +19,10 @@
     --size-block: 60.25rem;
     --size-canvas: 90rem;
 
+    /* Radius */
+    
+    --radius-small: .3125rem;
+
     /* Fonts (grosor/tamaño/familia)*/
 
     --font-h1: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif", serif;
@@ -26,6 +30,157 @@
     --font-h3: 400 clamp(1.1875rem, 5vw, 1.5rem) "Hedvig Letters Serif", serif;
     --font-h4: 500 clamp(1.0625rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
     --font-p: 400 .9375rem "Instrument Sans", sans-serif;
-    --font-link: 400 .9375rem "Instrument Sans", sans-serif;
+    --font-link: 500 .9375rem "Instrument Sans", sans-serif;
+
+}
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Instrument Sans", sans-serif;
+}
+
+img { /*Esto para que la imagen no se salga de la pantalla pero que abarque todo el ancho/ object-fit:cover; la imagen se adapta en alto y ancho*/
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+ul, ol {
+    list-style: none;
+}
+
+/************************COMPONENTS*****************************/
+
+h1, .heading-h1 {
+    font: var(--font-h1);
+}
+
+h2, .heading-h2 {
+    font: var(--font-h2);
+}
+
+h3, .heading-h3 {
+    font: var(--font-h3);
+}
+
+h4, .heading-h4 {
+    font: var(--font-h4)
+}
+
+p, span, li, .font-p {
+    font: var(--font-p);
+}
+
+a, .font-link {
+    font: var(--font-link);
+}
+
+a.btn {
+    padding: var(--size-xs) var(--size-md);
+    display: inline-flex;
+    gap: var(--size-xs);
+    align-items: center;
+    border-radius: 100px;
+
+    &.btn--dark {
+        background-color:var(--color-dark) ;
+        color: var(--color-light);
+    }
+
+    &.btn--light {
+        background-color:var(--color-light) ;
+        color: var(--color-dark);
+    }
+
+    &:hover {
+        opacity: 80%;
+    }
+
+    transition: opacity .3s;
+}
+
+.menu_link{
+    opacity: 50%;
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    transition: opacity 200ms;
+}
+
+.img-radius {
+    border-radius: var(--radius-small);
+}
+
+.block {
+    max-width: var(--size-block);
+    margin: 0 auto;
+}
+
+.section {
+    padding: var(--size-lg) var(--size-sm);
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+}
+
+
+/**********HEADER***********/
+
+.header{ 
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-md);
+    align-items:center;
+
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+}
+
+.neuron_logo{
+    max-width: 5.75rem;
+
+}
+
+.nav_menu{
+    display: flex;
+    gap: var(--size-md);
+
+}
+
+/**********HERO***********/
+.hero{
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+    padding: 0 var(--size-xs);
+}
+
+.hero_background{
+    padding: var(--size-md);
+    color: var(--color-light);
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Home-banner.webp ");
+    border-radius: var(--radius-small);
+
+}
+
+.hero_block{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--size-md);
+    width: 100%;
 
 }
