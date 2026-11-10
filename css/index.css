@@ -149,9 +149,25 @@ a.btn {
 
 }
 
+.icono_menu_mobile_tablet{
+    display: none;
+    
+@media (max-width:768px){
+    display: inline-block;
+}
+
+}
+
 .nav_menu{
     display: flex;
     gap: var(--size-md);
+
+}
+
+@media (max-width: 768px) {
+.nav_menu{
+    display: none;
+}
 
 }
 
@@ -174,6 +190,10 @@ a.btn {
     background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Home-banner.webp ");
     border-radius: var(--radius-small);
 
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; /*para adaptar la imagen si estirarse en exceso*/
+
 }
 
 .hero_block{
@@ -184,3 +204,89 @@ a.btn {
     width: 100%;
 
 }
+
+/**********SECTION 01***********/
+
+.cta {
+    padding: var(--size-lg) var(--size-sm)
+}
+
+.cta_block{
+    display: flex;
+    gap: var(--size-lg) ;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.cta_img {
+    max-width: 450px;
+    flex: 1 1 320px;
+}
+
+.cta_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--size-md);
+    align-items: start;
+    flex: 1 1 320px;
+}
+
+.cta_content_title{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+
+}
+
+/**********SECTION 02***********/
+
+.section02{
+
+}
+.section02_block{
+
+}
+.section02_content{
+    display: flex;
+    
+
+}
+.section02_content_title{
+    display: flex;
+
+}
+.section02_text{
+
+}
+ 
+/*
+  Color 
+    --color-dark: #1F1F1F; 
+    --color-light: #F3F3F3; 
+    --color-brand: #4391F0; 
+
+    Sized 
+    --size-xss:.5rem;
+    --size-xs: .625rem;
+    --size-sm: 1rem;
+    --size-md: 2rem;
+    --size-lg: 4rem ;
+
+
+    --size-block: 60.25rem;
+    --size-canvas: 90rem;
+
+    Radius 
+    
+    --radius-small: .3125rem;
+
+     Fonts (grosor/tamaño/familia)
+
+    --font-h1: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif", serif;
+    --font-h2: 400 clamp(1.5rem, 5vw, 2rem) "Hedvig Letters Serif", serif;
+    --font-h3: 400 clamp(1.1875rem, 5vw, 1.5rem) "Hedvig Letters Serif", serif;
+    --font-h4: 500 clamp(1.0625rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
+    --font-p: 400 .9375rem "Instrument Sans", sans-serif;
+    --font-link: 500 .9375rem "Instrument Sans", sans-serif;
+   */
