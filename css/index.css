@@ -220,7 +220,7 @@ a.btn {
 
 .cta_img {
     max-width: 450px;
-    flex: 1 1 320px;
+    flex: 1 1 200px;
 }
 
 .cta_heading{
@@ -229,7 +229,7 @@ a.btn {
     justify-content: center;
     gap: var(--size-md);
     align-items: start;
-    flex: 1 1 320px;
+    flex: 1 1 200px;
 }
 
 .cta_content_title{
@@ -242,22 +242,35 @@ a.btn {
 /**********SECTION 02***********/
 
 .section02{
-
+    padding: var(--size-lg) var(--size-sm) ;
+    gap: var(--size-xs);
 }
 .section02_block{
-
-}
-.section02_content{
     display: flex;
+    align-items: center;
+    justify-content: center;
     
 
 }
+.section02_contents{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.section02_content{
+    flex: 1 1 200px;
+
+    
+}
 .section02_content_title{
     display: flex;
-
+    gap: var(--size-sm) ;
+    padding: var(--size-sm);
+  
 }
 .section02_text{
-
+   padding: var(--size-sm);
+  
 }
  
 /*
