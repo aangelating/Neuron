@@ -25,7 +25,7 @@
             <a class="icono_menu_mobile_tablet" href="#"><i class="ri-menu-line"></i></a>
         </nav>
     </header> 
-    
+    <!--------------------------------------------------------------------------------------------------------------------->
     <main>
         <section class="hero section">
             <div class="hero_background">
@@ -37,14 +37,14 @@
             </div>
         </section>
 
-<!------------CTA------->
+<!-----------------------------------------------------------------------CTA---------------------------------------------->
         <section class="cta section">
             <div class="cta_block block">
-                <div class="cta_img ">
+                <div class="cta_img">
                     <picture>
                         <source srcset="media/Home-img-1.avif" type="image/avif">
                         <source srcset="media/Home-img-1.webp" type="image/webp">
-                        <img src="media/Home-img-1.jpg">
+                        <img class="img-radius" src="media/Home-img-1.jpg">
                     </picture>
                 </div>
                 <div class="cta_heading">
@@ -57,50 +57,143 @@
                 </div>
             </div>
         </section>
-<!------------SECTION02------->
-        <section class="section02 section">
-            <div class="section02_block block">
-                <div class="section02_contents">
-                    <div class="section02_content">
-                        <div class="section02_content_title">
-                            <i class="ri-angularjs-line"></i>
-                            <h4> Modern.</h4>
-                        </div>
-                        <div class="section02_text">
-                            <p>We use the latest technology.</p>
-                        </div>
-                    </div>    
-                    <div class="section02_content">
-                        <div class="section02_content_title">
-                            <i class="ri-barcode-fill"></i>
-                            <h4>Easy.</h4>
-                        </div>
-                        <div class="section02_text">
-                            <p>Easy editing without restrictions.</p>
-                        </div>
+<!---------------------------------------------------FEATURE--------------------------------------------------------------->
+        <section class="features section">
+            <div class="features_block block">
+                <div class="features_card">
+                    <h3 class="heading-h4">
+                        <i class="ri-angularjs-line"></i>
+                        Modern.
+                    </h3>
+                     <p>We use the latest technology.</p>
+                </div>
+                <div class="features_card">
+                    <h3 class="heading-h4">
+                         <i class="ri-barcode-fill"></i>
+                        Easy.
+                    </h3>
+                    <p>Easy editing without restrictions.</p>
+                </div>
+                 <div class="features_card">
+                    <h3 class="heading-h4">
+                        <i class="ri-atom-line"></i>
+                        Editable.
+                    </h3>
+                   <p>You will be able to edit everything.</p>
+                </div>
+                <div class="features_card">
+                    <h3 class="heading-h4">
+                         <i class="ri-notification-3-line"></i>
+                        Connected.
+                    </h3>
+                   <p>Always keep your community informed.</p>
+                </div>
+                </div>
+        </section>
+<!--------------------------------------------------------CTA-------------------------------------------------------->
+        <section class="cta">
+            <div class="cta_block block">
+                <div class="cta_contents">
+                    <div class="cta_content_tittle">
+                        <h2>We make everything easy.</h2>
+                        <h4>Or so we are told</h4>
                     </div>
-                    <div class="section02_content">
-                        <div class="section02_content_title">
-                            <i class="ri-atom-line"></i>
-                            <h4>Editable.</h4>
-                        </div>
-                        <div class="section02_text">
-                            <p>You will be able to edit everything.</p>
-                        </div>
+                    <p>We keep the essence of your business, no worries, just ease of use, speed, and constant communication with our team of professionals. What else?</p>
+                    <a class="cta_btn btn btn--dark" href="contact.html">Let me in <i class="ri-arrow-right-up-line"></i> </a>
+                </div>
+                <div class="cta_img img-radius">
+                    <picture >
+                        <source  srcset="media/Home-img-2.avif" type="image/avif">
+                        <source srcset="media/Home-img-2.webp" type="image/webp">
+                        <img class="img-radius" src="media/Home-img-2.jpg">
+                    </picture>
+                </div>
+            </div>
+        </section>
+<!-------------------------------------------------------SERVICES------------------------------------------------------>
+        <section class="services section">
+            <div class="services_block block">
+                <h2>What can we do.</h2>
+                <p>Take a look at our most outstanding services, surely some of the will interest you.</p>
+                <ul class="services_grid"> <!--Esto es una lista de servicios, se pone asi para google entienda que es una lista de servicios es para las buenas prácticas-->
+                    <li class="services_card">
+                             <picture>
+                                <source srcset="media/Services-1.avif" type="image/avif">
+                                <source srcset="media/Services-1.webp" type="image/webp">
+                                <img class="img-radius" src="media/Services-1.jpeg">
+                            </picture>
+                        <h3>Web development</h3>
+                        <p>We convert your business into a fully functional and editable website, with what your business requires, fast and easy to use.</p>
+                    </li>
+                    <li class="services_card">
+                            <picture>
+                                <source srcset="media/Services-2.avif" type="image/avif">
+                                <source srcset="media/Services-2.webp" type="image/webp">
+                                <img class="img-radius" src="media/Services-2.jpeg">
+                            </picture>
+                        <h3>App development</h3>
+                        <p>Your audience will always be on their cell phones. Why complicate things for them? Make it easy for them with a modern app.</p>
+                    </li>
+                </ul>
+                <a class="services_btn btn btn--dark" href="services.html">See all services</a>
+            </div>
+        </section>
+    <!-------------------------------------------------------PRICES------------------------------------------------>
+        <section class="prices section">
+            <div class="prices_block">
+                <div class="prices_card_light">
+                    <div class="prices_price">
+                        <span class="heading-h3">Basic Plan</span>
+                        <span class="heading-h1">99€</span>
+                        <a class="btn btn--dark" href="# "> Try it for free <i class="ri-arrow-right-up-line"></i>  </a>
                     </div>
-                      <div class="section02_content">
-                        <div class="section02_content_title">
-                            <i class="ri-notification-3-line"></i>
-                            <h4>Editable.</h4>
-                        </div>
-                        <div class="section02_text">
-                            <p>You will be able to edit everything.</p>
-                        </div>
+                    <ul class="prices_tipo_light">
+                        <li><i class="ri-checkbox-circle-line icon_dark "></i> UX/UI</li>
+                        <li><i class="ri-checkbox-circle-line icon_dark "></i> WordPress</h4></li>
+                        <li><i class="ri-checkbox-circle-line icon_dark "></i> Customized panel</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>Neuhost access</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>Neuron Studio</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>Web development</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>App development</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>SEO/SEM</li>
+                    </ul>
+                </div>
+                 <div class="prices_card_dark">
+                     <div class="prices_price">
+                        <span class="heading-h3">Pro Plan</span>
+                        <span class="heading-h1">129€</span>
+                        <a class="btn btn--light" href="# "> Try it for free <i class="ri-arrow-right-up-line"></i>  </a>
                     </div>
+                    <ul class="prices_tipo_dark">
+                        <li><i class="ri-checkbox-circle-line icon_light "></i> UX/UI</li>
+                        <li><i class="ri-checkbox-circle-line icon_light "></i> WordPress</li>
+                        <li><i class="ri-checkbox-circle-line icon_light "></i> Customized panel</li>
+                        <li><i class="ri-checkbox-circle-line icon_light "></i>Neuhost access</li>
+                        <li><i class="ri-checkbox-circle-line icon_light "></i>Neuron Studio</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>Web development</li>
+                        <li><i class="ri-close-circle-line icon_red "></i> App development</li>
+                        <li><i class="ri-close-circle-line icon_red "></i>SEO/SEM</li>
+                    </ul>
+                </div>
+                <div class="prices_card_light">
+                        <div class="prices_price">
+                            <span class="heading-h3">Basic Plan</span>
+                            <span class="heading-h1">99€</span>
+                            <a class="btn btn--dark" href="# "> Try it for free <i class="ri-arrow-right-up-line"></i>  </a>
+                        </div>
+                        <ul class="prices_tipo_light">
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p "></i> UX/UI</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p  "></i> WordPress</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p  "></i> Customized panel</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p "></i>Neuhost access/</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p "></i> Neuron Studio</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p "></i> Web development</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p "></i> App development</li>
+                            <li><i class="ri-checkbox-circle-line icon_dark heading-p "></i>SEO/SEM</li>
+                        </ul>
                     </div>
                 </div>
         </section>
-<!------------SECTION03------->
     </main>
     <footer>
 
