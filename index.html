@@ -140,9 +140,9 @@
         </section>
     <!-------------------------------------------------------PRICES------------------------------------------------>
         <section class="prices section">
-            <div class="prices_block">
+            <div class="prices_block block">
                 <div class="prices_card_light">
-                    <div class="prices_price">
+                    <div class="prices_head">
                         <span class="heading-h3">Basic Plan</span>
                         <span class="heading-h1">99€</span>
                         <a class="btn btn--dark" href="# "> Try it for free <i class="ri-arrow-right-up-line"></i>  </a>
@@ -159,7 +159,7 @@
                     </ul>
                 </div>
                  <div class="prices_card_dark">
-                     <div class="prices_price">
+                     <div class="prices_head">
                         <span class="heading-h3">Pro Plan</span>
                         <span class="heading-h1">129€</span>
                         <a class="btn btn--light" href="# "> Try it for free <i class="ri-arrow-right-up-line"></i>  </a>
@@ -176,8 +176,8 @@
                     </ul>
                 </div>
                 <div class="prices_card_light">
-                        <div class="prices_price">
-                            <span class="heading-h3">Basic Plan</span>
+                        <div class="prices_head">
+                            <span class="heading-h3">Xtreme Plan</span>
                             <span class="heading-h1">99€</span>
                             <a class="btn btn--dark" href="# "> Try it for free <i class="ri-arrow-right-up-line"></i>  </a>
                         </div>
@@ -194,6 +194,48 @@
                     </div>
                 </div>
         </section>
+<!-------------------------------------------------------CONTACT------------------------------------------------>
+
+    <section class="contact section">
+        <div class="contact_block block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5022.571094511951!2d-0.3705255160492344!3d39.47114191367522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048b1108c3223%3A0xb68c275674815c4e!2sPuerta%20del%20Mar!5e0!3m2!1ses!2ses!4v1794844211297!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            <div class="contact_content">
+                <h2>Contact with us</h2>
+                <p>You can also check other ways to contact us on the contact page.</p>
+                <form class="form" action="#" method="post">
+                    <div class="form_columns">
+                        <div class="form_field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="form_field">
+                            <label for="surname">Surname</label>
+                            <input id="surname" name="surname" type="text" placeholder="Surname" >
+                        </div>
+                    </div>
+                    <div class="form_field">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="E-mail" readonly required>
+                    </div>
+                    <div class="form_field">
+                        <label for="services">Services</label>
+                        <select name="services" id="services">
+                            <option selected disabled >Select the services</option>
+                            <option value="1">Basic Plan</option>
+                            <option value="2">Pro plan</option>
+                            <option value="3">Xtreme plan</option>
+                        </select>
+                    </div>
+                   <div class="form_field form_field_acceptance">
+                        <label for="checkbox"> I have read and accept the privacy policy</label>
+                        <input id="checkbox" name="checkbox" type="checkbox" placeholder="I have read and accept the privacy policy" readonly required> 
+                   </div>
+                   <button type="submit" class="btn btn_form">Send <i class="ri-arrow-right-up-line"></i>  </button>
+                </form>
+            </div>
+        </div>
+    </section>
     </main>
     <footer>
 

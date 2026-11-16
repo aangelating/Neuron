@@ -6,7 +6,9 @@
     /* Color */
     --color-dark: #1F1F1F; 
     --color-light: #F3F3F3; 
-    --color-brand: #4391F0; 
+    --color-brand: #4391F0;
+    --color-error:  #E26868; 
+    --color-btn-send:#4391F0; 
 
     /* Sized */
     --size-xss:.5rem;
@@ -82,7 +84,7 @@ a, .font-link {
     font: var(--font-link);
 }
 
-a.btn {
+.btn {
     padding: var(--size-xs) var(--size-md);
     display: inline-flex;
     gap: var(--size-xs);
@@ -104,17 +106,50 @@ a.btn {
     }
 
     transition: opacity .3s;
+
+    &.btn_form{
+        background-color: var(--color-btn-send);
+        color: var(--color-light);
+        border: none;
+
 }
+}
+
+input, select {
+    padding: var(--size-sm);
+    border-radius: 100px;
+    background-color: var(--color-light);
+    border: none;
+
+    &:hover{
+        opacity: 80%;
+    }
+
+    &:focus{
+        border: 1px solid var(--color-dark);
+        outline: none;
+    }
+
+    transition: opacity 250ms, border 250ms;
+}
+
+label:not([for="acceptance"]){
+    display: none;
+
+    
+}
+
 .icon_light {
-    color: #F3F3F3;
+    color: var(--color-light);
+    
 }
 
 .icon_dark  {
-    color: #1F1F1F;
+    color: var(--color-dark);
 }
 
 .icon_red {
-    color: #E26868;
+    color: var(--color-error);
 }
 
 .menu_link{
@@ -355,47 +390,114 @@ a.btn {
 .prices_block{
     display: flex;
     gap: var(--size-sm);
-    justify-content: center;
-    background-color: pink;
+    flex-wrap: wrap;
 }
 
 .prices_card_light{
     background-color: var(--color-light);
+    border-radius: var(--radius-small);
+    
     display: flex;
     flex-direction: column;
     padding: var(--size-md);
     gap: 48px ;
-    border-radius: var(--radius-small);
+    flex: 1 1 280px;
 }
 
-.prices_card_dark{
-    background-color: var(--color-dark);
-    display: flex;
-    flex-direction: column;
-    padding: var(--size-md);
-    gap: 48px ;
-    border-radius: var(--radius-small);
-}
-.prices_price{
+.prices_head{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: var(--size-sm);
+
+    & .btn{
+        align-self: stretch;
+        justify-content: center;
+    }
 }
+
+.prices_card_dark{
+    display: flex;
+    flex: 1 1 280px;
+    flex-direction: column;
+    padding: var(--size-md);
+    gap: 48px ;
+
+    background-color: var(--color-dark);
+    border-radius: var(--radius-small);
+    color: var(--color-light);
+    
+}
+
 .prices_tipo_dark{
     display: flex;
     flex-direction: column;
     color: var(--color-light);
     gap: var(--size-xs);
+
+    & li {
+        display: flex;
+        gap: var(--size-sm)
+    }
 }
 
 .prices_tipo_light{
     display: flex;
     flex-direction: column;
     gap: var(--size-xs);
+
+     & li {
+        display: flex;
+        gap: var(--size-sm)
+    }
 }
  
- 
+/**********CONTACT***********/
+
+.contact_block{
+    display: flex;
+    gap: var(--size-lg)
+    
+}
+
+.contact_content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md)
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm)
+    
+}
+
+.form_columns{
+    display: flex;
+    gap: var(--size-sm);
+    flex-wrap: wrap;
+
+    &.form_field{
+        flex: 1 1 100px;
+    }
+}
+
+.form_field{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xs);
+
+    &.form_field_acceptance{
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+    
+}
+    
+
 /*
   Color 
     --color-dark: #1F1F1F; 

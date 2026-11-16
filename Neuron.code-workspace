@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Ángela"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Neuron"
+	}
+}
