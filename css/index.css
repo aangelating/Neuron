@@ -43,6 +43,10 @@
     font-family:"Instrument Sans", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img { /*Esto para que la imagen no se salga de la pantalla pero que abarque todo el ancho/ object-fit:cover; la imagen se adapta en alto y ancho*/
     max-width: 100%;
     width: 100%;
@@ -262,6 +266,71 @@ label:not([for="acceptance"]){
 
 }
 
+/**********HERO SERVICES***********/
+.hero-small{
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+    padding: 0 var(--size-xs);
+}
+
+.hero-small__background{
+    padding: var(--size-md);
+    color: var(--color-light);
+    min-height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.hero-small__background--services{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../media/Services-banner.webp ");
+    border-radius: var(--radius-small);
+
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; /*para adaptar la imagen si estirarse en exceso*/
+    }
+
+    &.hero-small__background--about{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../media/About-banner.webp ");
+    border-radius: var(--radius-small);
+
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; /*para adaptar la imagen si estirarse en exceso*/
+    }
+
+    &.hero-small__background--news{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../media/News-banner.webp ");
+    border-radius: var(--radius-small);
+
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; /*para adaptar la imagen si estirarse en exceso*/
+    }
+
+    &.hero-small__background--contact{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../media/Contact-banner.webp ");
+    border-radius: var(--radius-small);
+
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; /*para adaptar la imagen si estirarse en exceso*/
+    }
+   
+}
+
+.hero-small__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-md);
+    width: 100%;
+
+}
+
+
+
 /**********CTA***********/
 
 .cta {
@@ -310,8 +379,7 @@ label:not([for="acceptance"]){
    flex-direction: column;
    gap: var(--size-sm);
    padding: var(--size-sm);
-    & h3{
-}
+    
 }
 /**********FEATURE flex se estirará con grid se adaptará a su columna y no se estirará
 
@@ -605,4 +673,36 @@ label:not([for="acceptance"]){
 
 }
 
+/**********TEXT ABOUT***********/
+
+.text__about_block{
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+
+}
+/**********CARD CONTACT ***********/
+.card{
+
+}
+.card__block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--size-xs)
+
+}
+.card__card{
+    display: flex;
+   flex-direction: column;
+   gap: var(--size-sm);
+   padding: var(--size-sm);
+   
+   background-color: var(--color-light);
+   border-radius: var(--radius-small);
+
+   & .card__contact_chat{
+    text-decoration: underline;
+   }
+}
 

@@ -19,7 +19,7 @@
                 <li><a  class="menu_link" href="services.html">Services</a></li>
                 <li><a  class="menu_link" href="about.html">About us</a></li>
                 <li> <a class="menu_link"  href="news.html">News</a></li>
-                <li> <a class="menu_link"  href="#">Price</a></li>
+                <li> <a class="menu_link"  href="#prices">Price</a></li>
                 <li> <a class="menu_link"  href="contact.html">Contact</a></li>
             </ul>
             <a class="icono__menu__mobile__tablet" href="#"><i class="ri-menu-line"></i></a>
@@ -27,6 +27,13 @@
     </header> 
     <main>
 <!-------------------------------------------------------BANNER------------------------------------------------------>
+    <section class="hero-small">
+        <div class="hero-small__background hero-small__background--services">
+        <div class="hero-small__block block">
+            <h2>Services</h2>
+        </div>
+        </div>
+    </section>
 <!-------------------------------------------------------SERVICES------------------------------------------------------>
         <section class="services section">
             <div class="services__block block">
@@ -39,7 +46,7 @@
                                 <source srcset="media/Services-1.webp" type="image/webp">
                                 <img class="img--radius" src="media/Services-1.jpeg">
                             </picture>
-                        <h3>Web development</h3>
+                        <h3 class="heading-h4">Web development</h3>
                         <p>We convert your business into a fully functional and editable website, with what your business requires, fast and easy to use.</p>
                     </li>
                     <li class="services__card">
@@ -48,15 +55,50 @@
                                 <source srcset="media/Services-2.webp" type="image/webp">
                                 <img class="img--radius" src="media/Services-2.jpeg">
                             </picture>
-                        <h3>App development</h3>
+                        <h3 class="heading-h4">App development</h3>
                         <p>Your audience will always be on their cell phones. Why complicate things for them? Make it easy for them with a modern app.</p>
                     </li>
+                     <li class="services__card">
+                             <picture>
+                                <source srcset="media/Services-3.avif" type="image/avif">
+                                <source srcset="media/Services-3.webp" type="image/webp">
+                                <img class="img--radius" src="media/Services-3.jpeg">
+                            </picture>
+                        <h3 class="heading-h4">Neuhost</h3>
+                        <p>Access to our own hosting hosted on Google servers with full control of your website.</p>
+                    </li>
+                    <li class="services__card">
+                             <picture>
+                                <source srcset="media/Services-4.avif" type="image/avif">
+                                <source srcset="media/Services-4.webp" type="image/webp">
+                                <img class="img--radius" src="media/Services-4.jpeg">
+                            </picture>
+                        <h3 class="heading-h4">Neuron Studio</h3>
+                        <p>Your own administration panel managed by Neuron's technical team that will take your business to the next level.</p>
+                    </li>
+                    <li class="services__card">
+                             <picture>
+                                <source srcset="media/Services-5.avif" type="image/avif">
+                                <source srcset="media/Services-5.webp" type="image/webp">
+                                <img class="img--radius" src="media/Services-5.jpeg">
+                            </picture>
+                        <h3 class="heading-h4">WordPress</h3>
+                        <p>We develop your website with WordPress for greater convenience for our customers, easy, intuitive and secure.</p>
+                    </li>
+                    <li class="services__card">
+                             <picture>
+                                <source srcset="media/Services-6.avif" type="image/avif">
+                                <source srcset="media/Services-6.webp" type="image/webp">
+                                <img class="img--radius" src="media/Services-6.jpeg">
+                            </picture>
+                        <h3 class="heading-h4">UX/UI</h3>
+                        <p>Our focus is your potential customers, that's why we do user experience studies to improve the feeling.</p>
+                    </li>
                 </ul>
-                <a class="services_btn btn btn--dark" href="services.html">See all services</a>
             </div>
         </section>
 <!-------------------------------------------------------PRICES------------------------------------------------>
-        <section class="prices section">
+        <section id="prices" class="prices section">
             <div class="prices__block block">
                 <div class="prices__card__light">
                     <div class="prices__head">
@@ -170,7 +212,6 @@
                         <li> <a href="#" <i class="ri-linkedin-box-fill"></i></a> </li>
                     </ul>
                 </div>
-           
             <ul class="footer__legal">
                 <li> <a href="#">Legal Notice</a></li>
                 <li> <a href="#"> </a>Privacy Policy</li>
