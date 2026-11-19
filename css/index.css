@@ -177,6 +177,16 @@ label:not([for="acceptance"]){
     transition: opacity 200ms;
 }
 
+.popup__link{
+    opacity: 50%;
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    transition: opacity 200ms;
+}
+
 .img--radius {
     border-radius: var(--radius-small);
 }
@@ -232,6 +242,39 @@ label:not([for="acceptance"]){
 
 }
 
+
+/**********POPUP***********/
+
+#popup-menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-light);
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: none;
+    align-items: center;
+    padding: var(--size-lg);
+
+    &:target{
+        display: flex;
+    }
+}
+.popup__menu-nav{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+}
+ .close_popup{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    font-size: 2rem;
+ }
+ 
 /**********HERO***********/
 .hero{
     max-width: var(--size-canvas);
