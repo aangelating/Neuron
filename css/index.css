@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
+@keyframes appear {
+    from{
+        opacity: 0;
+        filter: blur(0.2rem);
+        transform: translateY(1.5rem);
+    }
+
+    to{
+        opacity: 100%;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
 
 :root {
 
@@ -35,6 +48,19 @@
     --font-link: 500 .9375rem "Instrument Sans", sans-serif;
 
 }
+
+/********* ANIMATION *********/
+
+.anim-appear{
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+
+    animation-timing-function:linear ;
+    animation-timeline: view(block 90% 0%);
+}
+
+/******** GENERAL ********/
 
 * { 
     padding: 0;
@@ -726,9 +752,7 @@ label:not([for="acceptance"]){
 
 }
 /**********CARD CONTACT ***********/
-.card{
 
-}
 .card__block{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
